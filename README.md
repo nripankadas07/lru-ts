@@ -19,7 +19,7 @@ runtime stats, and an injectable clock for deterministic tests.
 ## Install
 
 ```bash
-npm install lru-ts
+npm install && npm run build
 ```
 
 ## Usage
