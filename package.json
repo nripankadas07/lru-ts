@@ -13,7 +13,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "pretest": "node --test dependency-audit.test.cjs"
   },
   "keywords": [
     "lru",
@@ -38,5 +39,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nripankadas07/lru-ts"
+  },
+  "overrides": {
+    "js-yaml": {
+      "argparse": "2.0.1"
+    }
   }
 }
